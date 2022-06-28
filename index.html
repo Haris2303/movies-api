@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Pencarian Films Sederhana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-color: #333;
+        color: #eaeaea;
+    }
+    
+    .keyword-name-movie {
+        background: none;
+        color: #eaeaea;
+        outline: none;
+    }
+    
+    .keyword-name-movie:focus {
+        background: none;
+        color: #eaeaea;
+        box-shadow: 0 0 10px rgba(224, 212, 212, .5);
+        border-color: white;
+    }
+    
+    .card {
+        box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <h1 class="text-center">Haris Movies DB</h1>
+                <div class="input-group mb-3 mt-5">
+                    <input type="text" class="form-control keyword-name-movie" placeholder="Search movie.." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn text-bg-light search-movie-button" type="button" id="button-addon2">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row movie-container">
+
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="movieDetailModal" tabindex="-1" aria-labelledby="movieDetailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-black">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="movieDetailModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
